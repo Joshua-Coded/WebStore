@@ -3,7 +3,7 @@ package com.alana.orderservice.service;
 import com.alana.orderservice.dto.InventoryResponse;
 import com.alana.orderservice.dto.OrderLineItemsDto;
 import com.alana.orderservice.dto.OrderRequest;
-//import com.alana.orderservice.event.OrderPlacedEvent;
+import com.alana.orderservice.event.OrderPlacedEvent;
 import com.alana.orderservice.model.Order;
 import com.alana.orderservice.model.OrderLineItems;
 import com.alana.orderservice.repository.OrderRepository;
@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-//import org.springframework.web.reactive.function.client.WebClient;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import java.util.Arrays;
 import java.util.List;
